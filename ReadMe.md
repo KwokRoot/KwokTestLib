@@ -3,7 +3,7 @@
 
 ============================
 
-<img src="/image/md.jpg" width="300px" height="168px" alt="超越" />
+<img src="image/md.jpg" width="300px" height="168px" alt="超越" />
 
 ============================
 
