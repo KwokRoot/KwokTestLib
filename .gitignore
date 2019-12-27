@@ -49,3 +49,6 @@ Temporary Items
 
 */bin/*
 */target/*
+**.classpath
+**.project
+*/.settings/*
