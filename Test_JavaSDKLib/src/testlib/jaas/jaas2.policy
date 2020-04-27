@@ -1,0 +1,9 @@
+grant  {
+    permission javax.security.auth.AuthPermission "createLoginContext.jaas2";
+    permission javax.security.auth.AuthPermission "modifyPrincipals";
+	permission javax.security.auth.AuthPermission "doAsPrivileged";
+};
+
+grant Principal testlib.jaas.CustomPrincipal "admin" {
+   permission java.util.PropertyPermission "java.home", "read";
+};
