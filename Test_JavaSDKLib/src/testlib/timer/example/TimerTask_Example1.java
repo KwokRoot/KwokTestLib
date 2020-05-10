@@ -1,16 +1,16 @@
-package testlib.timer;
+package testlib.timer.example;
 
 import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class TimeTask extends TimerTask{
+public class TimerTask_Example1 extends TimerTask{
 
 	Timer timer ;
 	Date endTime = new Date(System.currentTimeMillis() + 1000 * 6);
 	int count = 0;
 	
-	public TimeTask(Timer timer){
+	public TimerTask_Example1(Timer timer){
 		this.timer = timer;
 	}
 	

@@ -1,13 +1,13 @@
-package testlib.timer;
+package testlib.timer.example;
 
 import java.util.Timer;
 
-public class TimerStart {
+public class Test_Example1 {
 
 	public static void main(String[] args) {
 		
 		Timer timer = new Timer();
-		TimeTask task = new TimeTask(timer);
+		TimerTask_Example1 task = new TimerTask_Example1(timer);
 		timer.schedule(task, 0, 1000);
 		
 	}
