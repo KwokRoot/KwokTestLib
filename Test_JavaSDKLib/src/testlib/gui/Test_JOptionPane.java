@@ -3,6 +3,7 @@ package testlib.gui;
 import java.awt.Font;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -34,6 +35,7 @@ public class Test_JOptionPane {
 		BufferedImage bufferedImage = null;
 		try {
 			bufferedImage = ImageIO.read(new URL("http://www.ucanmax.com/static/image/wrong_bg.png"));
+			//bufferedImage = ImageIO.read(new File("image/data/deer.png"));
 		} catch (MalformedURLException e1) {
 			e1.printStackTrace();
 		} catch (IOException e1) {

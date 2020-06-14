@@ -83,7 +83,8 @@ public class Test_Event {
 		});
 		
 		frame.add(textField);
-		
+		frame.validate();	//验证此容器及其所有子组件，再次布置其子组件。
+		//frame.pack();	//调整此窗口的大小，以适合其子组件的首选大小和布局。
 	}
 
 }

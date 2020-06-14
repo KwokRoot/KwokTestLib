@@ -6,7 +6,7 @@ import java.util.Map;
  * 该练习是程序中获取系统属性的练习。
  * @author Kwok
  */
-public class Test_SystemProperty {
+public class Test_SystemProperty2 {
 
 	public static void main(String[] args) {
 		

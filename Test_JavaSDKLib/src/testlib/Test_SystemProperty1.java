@@ -8,7 +8,7 @@ import java.util.Set;
  * 该练习对系统的默认配置项的读取练习。
  * @author Kwok
  */
-public class Test_SystemProperties {
+public class Test_SystemProperty1 {
 
 	public static void main(String[] args) {
 
