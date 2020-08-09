@@ -1,4 +1,4 @@
-package org.kwok.hash;
+package org.kwok.guava.hash;
 
 import java.security.NoSuchAlgorithmException;
 
