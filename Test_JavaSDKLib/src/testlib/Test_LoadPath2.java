@@ -1,4 +1,4 @@
-﻿package testlib;
+package testlib;
 
 import java.io.FileInputStream;
 import java.io.IOException;
