@@ -38,11 +38,11 @@ public class Test_Jdk8_Map {
 		
 		System.out.println("========= @since 1.8 String java.util.Map.compute(String key, BiFunction remappingFunction) =========");
 		
-		//新值替换旧值，返回旧值
+		//新值替换旧值，返回新值
 		System.out.println(map.compute("111", (k, v) -> {
 			System.out.println(k);
 			//结果：111
-			System.out.println(v);
+			System.out.println(v); //v 为旧值。
 			//结果：null
 			return v + "111111";
 		}));
@@ -53,7 +53,7 @@ public class Test_Jdk8_Map {
 		System.out.println(map.compute("111", (k, v) -> {
 			System.out.println(k);
 			//结果：111
-			System.out.println(v);
+			System.out.println(v); //v 为旧值。
 			//结果：null111111
 			return v + "111111";
 		}));
