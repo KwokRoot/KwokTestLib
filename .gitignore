@@ -52,10 +52,10 @@ Temporary Items
 */bin/*
 *.project
 *.classpath
+*/.classpath
 
 
 */.idea/*
 *.iml
 */out/*
-
 

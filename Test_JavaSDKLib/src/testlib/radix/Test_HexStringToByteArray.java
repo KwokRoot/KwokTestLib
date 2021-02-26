@@ -1,7 +1,7 @@
 package testlib.radix;
 
 /**
- * 该练习是 16进制 字符串转化为字节数组的 4种 方式的练习。
+ * 该练习是 16进制 字符串转化为字节数组的练习。
  * @author Kwok
  */
 public class Test_HexStringToByteArray {

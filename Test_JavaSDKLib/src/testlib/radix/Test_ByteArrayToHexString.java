@@ -1,7 +1,7 @@
 package testlib.radix;
 
 /**
- * 该练习是字节数组转化为 16进制 字符串的 4种 方式的练习。
+ * 该练习是字节数组转化为 16进制 字符串的练习。
  * @author Kwok
  */
 public class Test_ByteArrayToHexString {
@@ -92,7 +92,18 @@ public class Test_ByteArrayToHexString {
 	}
 	
 	
-		
+	
+	public static String byteArrayToHexString5(byte[] bytes) {
+		StringBuilder sb = new StringBuilder(bytes.length * 2);
+		for (byte b : bytes) {
+			int x = b & 0xff;
+			sb.append(Integer.toString(x >> 4, 16)).append(Integer.toString(x & 0xf, 16));
+		}
+		return sb.toString();
+	}
+	
+	
+	
 	public static void main(String[] args) {
 		
 		byte[] bytes = "A".getBytes(); //A 的二进制 ： 0100 0001
@@ -101,6 +112,7 @@ public class Test_ByteArrayToHexString {
 		System.out.println(byteArrayToHexString2(bytes));
 		System.out.println(byteArrayToHexString3(bytes));
 		System.out.println(byteArrayToHexString4(bytes));
+		System.out.println(byteArrayToHexString5(bytes));
 		
 	}
 
