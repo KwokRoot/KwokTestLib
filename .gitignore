@@ -55,7 +55,7 @@ Temporary Items
 */.classpath
 
 
-*/.idea/*
+**/.idea/*
 *.iml
 */out/*
 
