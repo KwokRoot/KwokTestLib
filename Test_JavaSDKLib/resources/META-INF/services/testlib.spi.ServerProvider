@@ -1,0 +1,3 @@
+testlib.spi.impl.LocalServerProvider
+testlib.spi.impl.RedisServerProvider
+testlib.spi.impl.MySQLServerProvider
