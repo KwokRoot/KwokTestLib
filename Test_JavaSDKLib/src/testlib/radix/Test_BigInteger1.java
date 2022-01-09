@@ -1,4 +1,4 @@
-package testlib;
+package testlib.radix;
 
 import java.math.BigInteger;
 

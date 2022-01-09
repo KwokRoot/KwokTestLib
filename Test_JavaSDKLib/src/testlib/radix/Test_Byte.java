@@ -1,4 +1,4 @@
-package testlib;
+package testlib.radix;
 
 /**
  * 该练习是对字节与数值相互转换的操作。
