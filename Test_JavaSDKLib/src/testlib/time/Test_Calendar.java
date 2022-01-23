@@ -25,7 +25,10 @@ public class Test_Calendar {
 		
 		System.out.println("------------------------------ 操作 2：Calendar 设置时区 ------------------------------");
 		
-		Calendar calendar2 = Calendar.getInstance();
+		//输出系统默认时区
+		System.out.println(TimeZone.getDefault());
+		
+		Calendar calendar2 = Calendar.getInstance(TimeZone.getDefault());
 		
 		System.out.println("****** 2-1 ******");
 		calendar2.clear();
