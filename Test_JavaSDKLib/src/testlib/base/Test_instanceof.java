@@ -1,8 +1,12 @@
 package testlib.base;
 
+import java.util.Collections;
+
 /**
- * 子类也是父类、祖先类、及 Object 类的实例。
+ * instanceof 判断 左边的对象 是否为 右边类或者子类 的实例。
+ * 子类实例也是其父类、祖先类、及 Object 类的实例。
  * @author Kwok
+ * 2022-06-09
  */
 public class Test_instanceof {
 
@@ -31,6 +35,24 @@ public class Test_instanceof {
 		true
 		false
 		false
+		*/
+		
+		
+		
+		System.out.println("例2 >>>" + String.join("", Collections.nCopies(2, "===")));
+				
+		Integer i = (Integer) null;
+		System.out.println(i instanceof Integer);
+		
+		Integer j = new Integer(1);
+		System.out.println(j instanceof Integer);
+		System.out.println(j instanceof Number);
+		
+		/*
+		结果：
+		false
+		true
+		true
 		*/
 		
 	}
