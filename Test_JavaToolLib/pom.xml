@@ -16,13 +16,13 @@
 	</properties>
 
 	<dependencies>
-		
+
 		<dependency>
 			<groupId>org.nutz</groupId>
 			<artifactId>nutz</artifactId>
 			<version>1.r.68.v20201011</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
@@ -69,6 +69,12 @@
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>4.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.github.yannrichet</groupId>
+			<artifactId>JMathPlot</artifactId>
+			<version>1.0.1</version>
 		</dependency>
 
 		<dependency>
