@@ -9,6 +9,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import joinery.DataFrame;
+import joinery.DataFrame.PlotType;
 
 /**
  * 使用 sh.joinery:joinery-dataframe 库进行分组求和
@@ -38,11 +39,18 @@ public class Test_Joinery {
 			
 		});
 		
-		// 窗体展示
-		df.groupBy("key").sum().sortBy("-value").show();
+		// 分组求和
+		DataFrame<Object> df_agg = df.groupBy("key").sum().sortBy("-value");
 		
 		// 打印 1000 行，默认 10 行
-		System.out.println(df.groupBy("key").sum().sortBy("-value").toString(1000));
+		System.out.println(df_agg.toString(1000));
+		
+		// 窗体展示
+		df_agg.show();
+		
+		// 绘图
+		// 注：绘制其他类型图形会出现 `java.lang.NoSuchMethodError: com.xeiam.xchart.StyleManager.setMarkerSize(I)V`，需更换依赖包版本。
+		df_agg.plot(PlotType.LINE_AND_POINTS);
 		
 	}
 }
