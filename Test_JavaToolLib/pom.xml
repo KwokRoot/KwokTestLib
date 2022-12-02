@@ -103,6 +103,11 @@
 		</dependency>
 		<!-- joinery 科学计算 END -->
 
+		<dependency>
+			<groupId>net.jodah</groupId>
+			<artifactId>expiringmap</artifactId>
+			<version>0.5.10</version>
+		</dependency>
 
 		<dependency>
 			<groupId>junit</groupId>
