@@ -16,7 +16,7 @@ import com.google.common.hash.Funnels;
  *   com.google.common.hash.BloomFilter.mightContain(String) 为 true，的判断可能正确，为 false 的判断一定正确。
  * @author Kwok
  */
-public class Test_BloomFilter {
+public class Test_Guava_BloomFilter {
 
 	public static void main(String[] args) {
 		/**

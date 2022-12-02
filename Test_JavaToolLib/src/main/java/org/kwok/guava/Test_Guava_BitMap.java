@@ -10,7 +10,7 @@ import com.google.common.collect.HashBiMap;
  * BiMap(bidirectional map) 键(Key)、值(Value)不可重复，可反转 K、V 值。
  * @author Kwok
  */
-public class Test_BitMap {
+public class Test_Guava_BitMap {
 
 	public static void main(String[] args) {
 		
