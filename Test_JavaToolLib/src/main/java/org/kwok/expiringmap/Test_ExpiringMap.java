@@ -27,8 +27,8 @@ public class Test_ExpiringMap {
 				}).build();
 
 		expirMap.put("1", "one");
-		expirMap.put("2", "one");
-		expirMap.put("3", "one");
+		expirMap.put("2", "two");
+		expirMap.put("3", "three");
 		
 		Thread.sleep(5000);
 		
