@@ -1,0 +1,30 @@
+<dependency>
+	<groupId>com.belerweb</groupId>
+	<artifactId>pinyin4j</artifactId>
+	<version>2.5.1</version>
+</dependency>
+
+<dependency>
+	<groupId>com.github.stuxuhai</groupId>
+	<artifactId>jpinyin</artifactId>
+	<version>1.1.8</version>
+</dependency>
+
+<dependency>
+	<groupId>com.github.promeg</groupId>
+	<artifactId>tinypinyin</artifactId>
+	<version>2.0.3</version>
+</dependency>
+
+<dependency>
+	<groupId>com.rnkrsoft.bopomofo4j</groupId>
+	<artifactId>bopomofo4j</artifactId>
+	<version>1.0.0</version>
+</dependency>
+
+<dependency>
+	<groupId>cn.hutool</groupId>
+	<artifactId>hutool-all</artifactId>
+	<version>5.7.9</version>
+</dependency>
+

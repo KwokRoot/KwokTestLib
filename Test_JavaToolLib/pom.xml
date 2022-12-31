@@ -109,6 +109,32 @@
 			<version>0.5.10</version>
 		</dependency>
 
+		<!-- 拼音 -->
+		<dependency>
+			<groupId>com.belerweb</groupId>
+			<artifactId>pinyin4j</artifactId>
+			<version>2.5.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.github.stuxuhai</groupId>
+			<artifactId>jpinyin</artifactId>
+			<version>1.1.8</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.github.promeg</groupId>
+			<artifactId>tinypinyin</artifactId>
+			<version>2.0.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.rnkrsoft.bopomofo4j</groupId>
+			<artifactId>bopomofo4j</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<!-- 拼音 END -->
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
