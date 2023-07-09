@@ -1,4 +1,4 @@
-package testlib.singleton;
+package testlib.designpatterns.singleton;
 
 import java.util.HashSet;
 import java.util.Set;
