@@ -134,7 +134,13 @@
 			<version>1.0.0</version>
 		</dependency>
 		<!-- 拼音 END -->
-
+		
+		<dependency>
+			<groupId>org.python</groupId>
+			<artifactId>jython-standalone</artifactId>
+			<version>2.7.3</version>
+		</dependency>
+		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>

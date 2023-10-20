@@ -20,7 +20,15 @@ public class Test_Runtime {
 		
 		/*执行命令*/
 		try {
-			Process process = Runtime.getRuntime().exec("ping baidu.com");
+			
+			String[] cmd = new String[]{"ping", "baidu.com"};
+			
+			/*
+			 * ProcessBuilder processBuilder = new ProcessBuilder(cmd); Process process =
+			 * processBuilder.start();
+			 */
+			
+			Process process = Runtime.getRuntime().exec(cmd);
 			process.waitFor(10, TimeUnit.SECONDS);
 			InputStream is = process.getInputStream();
 			byte[] bytes = new byte[is.available()];
