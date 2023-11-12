@@ -1,7 +1,10 @@
 package org.kwok.hutool;
 
+import java.io.ByteArrayInputStream;
+
 import javax.crypto.spec.IvParameterSpec;
 
+import cn.hutool.core.util.HexUtil;
 import cn.hutool.crypto.KeyUtil;
 import cn.hutool.crypto.Mode;
 import cn.hutool.crypto.Padding;
@@ -37,6 +40,17 @@ public class Test_Hutool_Secure {
 		DES des2 = new DES(Mode.CBC, Padding.PKCS5Padding, "abcdabcd".getBytes());
 		des2.setParams(new IvParameterSpec("abcdabcd".getBytes()));
 		System.out.println(des2.encryptBase64("admin"));
+		
+		
+		// SHA1哈希加密(cn.hutool.crypto.SecureUtil)
+		// 相应 Linux 命令：echo -n "/h0z+ZzM" | sha1sum  | tr -d '-'
+		System.out.println(SecureUtil.sha1("/h0z+ZzM"));
+		
+		
+		// 双SHA1哈希加密(cn.hutool.crypto.SecureUtil)
+		// 相应 Linux 命令：echo -n "/h0z+ZzM" | sha1sum  | tr -d '-'|xxd -r -p|sha1sum | tr -d '-'
+		System.out.println(SecureUtil.sha1(new ByteArrayInputStream(HexUtil.decodeHex(SecureUtil.sha1("/h0z+ZzM")))));
+		
 		
 	}
 
