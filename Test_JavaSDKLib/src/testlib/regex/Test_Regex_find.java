@@ -1,4 +1,4 @@
-package testlib;
+package testlib.regex;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
  * java.util.regex.Matcher.find() 定位到匹配的子串。
  * @author 
  */
-public class Test_Regex2 {
+public class Test_Regex_find {
 
 	public static void main(String[] args) {
 		
