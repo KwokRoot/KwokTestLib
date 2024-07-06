@@ -169,6 +169,14 @@
 		</dependency>
 		<!-- Apache Calcite END -->
 
+		<!-- Apache Commons Net -->
+		<dependency>
+			<groupId>commons-net</groupId>
+			<artifactId>commons-net</artifactId>
+			<version>3.11.1</version>
+		</dependency>
+		<!-- Apache Commons Net END -->
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
