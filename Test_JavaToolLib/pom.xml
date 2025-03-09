@@ -178,6 +178,18 @@
 		<!-- Apache Commons Net END -->
 
 		<dependency>
+			<groupId>io.github.resilience4j</groupId>
+			<artifactId>resilience4j-all</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.7.36</version>
+		</dependency>
+
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.13.1</version>
