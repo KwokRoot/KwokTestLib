@@ -2,10 +2,13 @@ package org.kwok.jedis;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.List;
 
+import cn.hutool.core.util.StrUtil;
 import redis.clients.jedis.DefaultJedisClientConfig;
 import redis.clients.jedis.JedisClientConfig;
 import redis.clients.jedis.Jedis;
+import redis.clients.jedis.Module;
 
 /**
  * Jedis Test
@@ -27,16 +30,16 @@ public class Test_Jedis {
 //				.database(1)
 //				.build();
 //		Jedis jedis = new Jedis("192.168.199.91", 6379, jedisClientConfig);
-		
-		
+
+
 		// 初始化方式三
-		Jedis jedis = null;
-		try {
-			jedis = new Jedis(new URI("redis://:123456@192.168.199.91:6379/1"), 3000);
-		} catch (URISyntaxException e) {
-			e.printStackTrace();
+		Jedis jedis = new Jedis(URI.create("jedis://:123456@192.168.199.91:16379/0"), 3000);
+		System.out.println(jedis.info());
+		List<Module> modules = jedis.moduleList();
+		for (Module module : modules){
+		    System.out.println(StrUtil.format("{}:{}", module.getName(), module.getVersion()));
 		}
-		
+
 		jedis.set("key", "val");
 		
 		String queueName = "queue";
