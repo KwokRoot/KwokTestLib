@@ -58,7 +58,7 @@ import org.apache.calcite.tools.Frameworks;
 /**
  * @Description: Apache Calcite 是一个动态数据管理框架，提供了：SQL 解析、SQL 校验、SQL 查询优化、SQL 生成以及数据连接查询等典型数据库管理功能。
  * @date: 2024年3月26日
- * @author guohao
+ * @author Kwok
  */
 public class Test_Calcite {
 

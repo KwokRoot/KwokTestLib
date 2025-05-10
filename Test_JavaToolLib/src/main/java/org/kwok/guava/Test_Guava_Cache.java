@@ -10,7 +10,7 @@ import com.google.common.cache.RemovalNotification;
 
 /**
  * 只有 缓存数 > maximumSize, expireAfterWrite/expireAfterAccess 才生效。
- * @author guohao
+ * @author Kwok
  */
 public class Test_Guava_Cache {
 
