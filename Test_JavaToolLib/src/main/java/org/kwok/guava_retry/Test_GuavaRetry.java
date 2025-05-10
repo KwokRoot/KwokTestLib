@@ -8,7 +8,7 @@ import com.github.rholder.retry.RetryerBuilder;
 import com.github.rholder.retry.StopStrategies;
 import com.github.rholder.retry.WaitStrategies;
 import com.google.common.base.Predicates;
-import org.kwok.CommonUtils;
+import org.kwok.util.CommonUtils;
 
 import java.io.IOException;
 import java.util.concurrent.Callable;

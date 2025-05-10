@@ -4,7 +4,7 @@ import io.github.resilience4j.core.IntervalFunction;
 import io.github.resilience4j.retry.Retry;
 import io.github.resilience4j.retry.RetryConfig;
 import io.github.resilience4j.retry.RetryRegistry;
-import org.kwok.CommonUtils;
+import org.kwok.util.CommonUtils;
 
 import java.io.IOException;
 import java.time.Duration;
