@@ -1,4 +1,4 @@
-package org.kwok.aviator;
+package org.kwok.scriptengine.aviator;
 
 import com.googlecode.aviator.AviatorEvaluator;
 import com.googlecode.aviator.AviatorEvaluatorInstance;
@@ -24,7 +24,7 @@ public class Test_AviatorOptions {
         aviatorEval.setCachedExpressionByDefault(true);
         aviatorEval.setOption(NIL_WHEN_PROPERTY_NOT_FOUND, true);
 
-        aviatorEval.compile("rule01","a + b == 3", true);
+        aviatorEval.compile("rule01", "a + b == 3", true);
 
         // 执行表达式
         Expression exp = aviatorEval.getCachedExpressionByKey("rule01");

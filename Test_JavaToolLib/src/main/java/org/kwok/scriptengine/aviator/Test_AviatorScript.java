@@ -1,4 +1,4 @@
-package org.kwok.aviator;
+package org.kwok.scriptengine.aviator;
 
 import com.googlecode.aviator.AviatorEvaluator;
 import com.googlecode.aviator.Expression;
