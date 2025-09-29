@@ -10,6 +10,7 @@ import java.util.Map;
 
 /**
  * @description: QLExpress 基础使用
+ * 注：`QLExpress` V3、V4 无论从文档完整度、源码注释，执行异常的处理，脚本执行安全策略配置 等方面都比不上脚本引擎 `Aviator`。
  * @author: Kwok
  * @date: 2025/9/27
  */

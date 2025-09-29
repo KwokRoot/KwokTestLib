@@ -209,12 +209,6 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>qlexpress4</artifactId>
-			<version>4.0.3</version>
-		</dependency>
-
-		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-jexl3</artifactId>
 			<version>3.5.0</version>
@@ -236,6 +230,18 @@
 			<groupId>org.jeasy</groupId>
 			<artifactId>easy-rules-mvel</artifactId>
 			<version>4.1.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>qlexpress4</artifactId>
+			<version>4.0.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>QLExpress</artifactId>
+			<version>3.3.4</version>
 		</dependency>
 		<!-- 模版引擎 END -->
 
