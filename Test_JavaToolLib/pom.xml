@@ -263,6 +263,13 @@
 			<version>1.7.36</version>
 		</dependency>
 
+		<!-- jol是JVM内存对象布局可视化工具 -->
+		<dependency>
+			<groupId>org.openjdk.jol</groupId>
+			<artifactId>jol-core</artifactId>
+			<version>0.17</version>
+		</dependency>
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
