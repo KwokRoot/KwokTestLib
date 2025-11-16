@@ -7,6 +7,8 @@ import cn.hutool.core.util.StrUtil;
 import com.google.common.base.Strings;
 import com.google.common.collect.Range;
 import com.google.common.collect.TreeRangeMap;
+import jdk.nashorn.internal.ir.debug.ObjectSizeCalculator;
+import org.openjdk.jol.info.GraphLayout;
 
 import java.math.BigInteger;
 import java.util.List;
@@ -77,6 +79,11 @@ public class Test_Guava_RangeMap_Case01_IP_Parse {
         load_ipv4();
         System.out.println(rangeMap.span());
         sw.stop();
+
+        // 获取对象占用内存大小
+        System.out.println(String.format("占用空间: %s MB", ObjectSizeCalculator.getObjectSize(rangeMap) / 1000_000));
+        // 获取对象及其引用对象占用内存大小（深堆）
+        System.out.println(String.format("占用空间: %s MB", GraphLayout.parseInstance(rangeMap).totalSize() / 1000_000));
 
         sw.start("ip解析测试");
         System.out.println(parse_ip("183.193.26.80"));
