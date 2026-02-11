@@ -8,7 +8,7 @@ import cn.hutool.jwt.signers.JWTSignerUtil;
  * @author: Kwok
  * @date: 2024/1/18
  */
-public class Test_JWK_PEM {
+public class Test_JWT_PEM {
 
     public static void main(String[] args) throws Exception {
 
